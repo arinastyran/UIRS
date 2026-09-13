@@ -7,7 +7,11 @@ authors = [
     { name = "arinastyran", email = "arina.styran@mail.ru" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.1",
+]
 
 [project.scripts]
 uirs = "uirs:main"
