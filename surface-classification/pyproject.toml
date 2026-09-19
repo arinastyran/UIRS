@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surface-classification"
+version = "1.0.0"
+description = "Code repository for Surface Classification Enhancement Using Estimated Power Consumption Data."
+readme = "README.md"
+requires-python = ">=3.11.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Łukasz Kędzierski", email = "249911@edu.p.lodz.pl"},
+    {name = "Nina Janus", email = "249910@edu.p.lodz.pl"},
+]
+keywords = ["deep learning", "inertial measurement unit", "surface classification", "power consumption", "autonomous mobile robots"]
+dependencies = [
+    "bagpy==0.5",
+    "cycler==0.12.1",
+    "matplotlib==3.10.6",
+    "numpy==2.3.2",
+    "odfpy==1.4.1",
+    "pandas==2.3.2",
+    "PyYAML==6.0.2",
+    "scikit-learn==1.7.2",
+    "scipy==1.16.1",
+    "seaborn==0.13.2",
+    "tqdm==4.67.1",
+    "xgboost==3.0.5",
+]
+
+# [project.optional-dependencies]
+# dev = ["pytest", "flake8"]
+
+# [project.scripts]
+# process-data = "src.data_processing.main:main"
+# run-experiment = "src.experiments.runner:main"
+
+[project.urls]
+Homepage = "https://github.com/lukasz-kedzierski/surface-classification"
+Repository = "https://github.com/lukasz-kedzierski/surface-classification"
+Issues = "https://github.com/lukasz-kedzierski/surface-classification/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
